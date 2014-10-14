@@ -1,0 +1,21 @@
+This is a quick hack 7810 command line disassembler, based on a previous work
+that was part of the MAME emulator (http://www.mamedev.org/).
+It should be useful for those who have to disassemble some ROM images
+containing uPD7810 (NEC) opcodes.
+
+There are only three possible (one required) command line arguments:
+filename[.ext]	A filename for the file containing a ROM image
+-o xxxx		A base address offset if the ROM doesn't start at 0
+-r		Output relative jump addresses; do not convert to absolute
+
+You will usually call the program like this:
+	./d7810 rom7810.bin >rom7810.asm
+
+
+This will redirect the output (the disassembly) into a file named rom7810.asm
+which you can then load into your favourite text editor.
+
+That's all,
+have fun
+
+Juergen <pullmoll@t-online.de>
