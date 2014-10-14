@@ -1,7 +1,7 @@
 /*****************************************************************************
  *  d7810 - an 7810 disassembler for the commandline
  *
- *  Copyright (C) 2002 Juergen Buchmueller <pullmoll@stop1984.com>
+ *  Copyright (C) 2002 Juergen Buchmueller <pullmoll@t-online.de>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
