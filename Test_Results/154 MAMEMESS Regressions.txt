@@ -1,0 +1,46 @@
+CORE
+-----
+SDL-Specific (possibly Windows only)
+Paths are not created if they do not exist
+Example:  Make sure there is no snap\xevious folder
+"sldmame xevious" then attempt to take a snapshot with F12
+Under normal circumstances, the missing folder+file would be created but this no longer happens+file never writes.
+August 16 SDLMAME Windows seems to work ok so regression is later
+
+Suspect strongly much work done on September 13th, 2014 by Firewave merging SDL and Windows functionality.
+
+
+
+MAME
+-----
+All sets in dwarfd.c
+[DEBUG] FATALERROR: assert: src/emu/video/i8275.c:587: m_buffer_idx >= 0 && m_buffer_idx < ARRAY_LENGTH(m_buffer[m_buffer_dma])
+
+--
+
+rcdino4 - funworld.c
+[DEBUG] FATALERROR: assert: src/mame/drivers/funworld.c:6422: (i+1 - 0x81) >= 0 && (i+1 - 0x81) < ARRAY_LENGTH(rcdino4_keys80)
+
+--
+
+All sets in itgambl2.c
+(Appears 32-bit Only)
+Exception at EIP=0192AFDA (h8_sci_device::internal_update(unsigned long long)+0x07aa): INTEGER DIVIDE BY ZERO
+
+--
+
+winrun and clones - namcos21.c
+[DEBUG] Exception at EIP=00BFCF78 (namcos21_state::winrun_dsp_pointrom_data_r(address_space&, unsigned int, unsigned short)+0x0038): ACCESS VIOLATION
+
+
+
+ 
+MESS
+-----
+at586, at586x3, ficvt503 - at.c
+[DEBUG] FATALERROR: assert: src/emu/bus/pci/i82439tx.c:131: ((offset - 0x50) / 4) >= 0 && ((offset - 0x50) / 4) < ARRAY_LENGTH(m_regs)
+
+--
+
+sun3_80 - sun3.c
+[DEBUG] FATALERROR: assert: src/emu/machine/ncr539x.c:343: m_buffer_offset < m_buffer_size
