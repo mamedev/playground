@@ -11,7 +11,3 @@ Test from SVN client
 
 2nd change
 
-333
-393
-333
-
