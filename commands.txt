@@ -1,0 +1,4 @@
+Useful commands.
+
+Get your copy of the files
+ git clone <clone_url_of_remote_repository>
