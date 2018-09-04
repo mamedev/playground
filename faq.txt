@@ -2,3 +2,9 @@ Frequently Asked Questions
 
 Q. What is the result of 2+2 ?
 A. Four
+
+Q. Another question
+A. Another answer
+
+Q. Third question
+A. third answer
